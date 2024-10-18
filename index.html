@@ -10,39 +10,37 @@
     <div class="container">
         <h2>DISNAKERTRANS</h2>
         <!-- Form dengan endpoint Formspree -->
-        <form id="appointmentForm" action="https://formspree.io/f/xpwzznvr" method="POST">
-            <label for="name">Nama:</label>
+        <form id="appointmentForm" action="https://formspree.io/f/xpwzznvr" method="POST" enctype="application/x-www-form-urlencoded">
+            <label for="name">NAMA</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="phone">No Telephone:</label>
+            <label for="phone">NO TELEPHONE</label>
             <input type="tel" id="phone" name="phone" required>
 
-
-            <label for="asal">Asal:</label>
+            <label for="asal">ASAL</label>
             <input type="text" id="asal" name="asal" required>
 
-            <label for="meetWith">Bertemu Dengan:</label>
+            <label for="meetWith">BERTEMU DENGAN</label>
             <select id="meetWith" name="meetWith" required>
                 <option value="">Pilih</option>
-                <option value="Galank">Kabid Galank</option>
-                <option value="Kabid Galank">Kabid Jeki</option>
-                <!-- <option value="Kadis Galank">Komjen Daffa</option> -->
+                <option value="Kabid Galank">Kabid Galank</option>
+                <option value="Kabid Jeki">Kabid Jeki</option>
             </select>
 
-            <label for="where">Di Mana:</label>
+            <label for="where">LOKASI</label>
             <select id="where" name="where" required>
                 <option value="">Pilih</option>
                 <option value="Kantor">Kantor</option>
                 <option value="Parkiran">Parkiran</option>
                 <option value="Libels">Libels</option>
-                <option value="Libels">Wakuncar</option>
+                <option value="Wakuncar">Wakuncar</option>
+                <option value="Wakuncar">DILUAR OPSI</option>
             </select>
 
-            <label for="date">Tanggal:</label>
+            <label for="date">TANGGAL</label>
             <input type="date" id="date" name="date" required>
 
-
-            <label for="time">Jam:</label>
+            <label for="time">WAKTU</label>
             <select id="time" name="time" required>
                 <option value="">Pilih</option>
                 <option value="08:00">08:00</option>
@@ -52,6 +50,7 @@
                 <option value="13:00">13:00</option>
                 <option value="14:00">14:00</option>
                 <option value="15:00">15:00</option>
+                <option value="15:00">DILUAR JAM KERJA</option>
             </select>
 
             <input type="hidden" name="_subject" value="Appointment Request">
@@ -59,7 +58,7 @@
 
             <button type="submit">Buat Janji</button>
 
-            <p>*KHUSUS PENTA</p>
+            <p>*KHUSUS ANAK "mangan"*</p>
 
         </form>
     </div>
